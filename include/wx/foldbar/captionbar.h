@@ -13,7 +13,7 @@
 #ifndef __FOLDPANELBAR_H__
 #define __FOLDPANELBAR_H__
 
-#ifdef WXMAKINGDLL_FOLDBAR
+#ifdef wxFoldbar_EXPORTS 
     #define WXDLLIMPEXP_FOLDBAR WXEXPORT
 #elif defined(WXUSINGDLL)
     #define WXDLLIMPEXP_FOLDBAR WXIMPORT

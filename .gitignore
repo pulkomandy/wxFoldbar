@@ -1,1 +1,3 @@
 *.cvsignore
+*.swp
+build/CMakeFiles/*
