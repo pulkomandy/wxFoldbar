@@ -15,16 +15,16 @@ add_library(wxFoldbar SHARED
 
 target_link_libraries(wxFoldbar ${wxWidgets_LIBRARIES})
 
-#add_executable(demo
-#	samples/foldpanelbar/foldpanelbartest.cpp
-#	samples/foldpanelbar/foldtestpanel.cpp
-#	samples/foldpanelbar/layouttest.cpp
-#	samples/foldpanelbar/test.cpp
-#)
+add_executable(demo WIN32
+	samples/foldpanelbar/foldpanelbartest.cpp
+	samples/foldpanelbar/foldtestpanel.cpp
+	samples/foldpanelbar/layouttest.cpp
+	samples/foldpanelbar/test.cpp
+)
 
-#add_executable(extended
-#	samples/extended/extended.cpp
-#)
+add_executable(extended WIN32
+	samples/extended/extended.cpp
+)
 
-#target_link_libraries(demo wxFoldbar)
-#target_link_libraries(extended wxFoldbar)
+target_link_libraries(demo wxFoldbar)
+target_link_libraries(extended wxFoldbar)

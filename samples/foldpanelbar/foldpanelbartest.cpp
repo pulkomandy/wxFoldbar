@@ -99,7 +99,7 @@ BEGIN_EVENT_TABLE(MyAppFrame, wxFrame)
     EVT_BUTTON(ID_EXPANDME,               MyAppFrame::OnExpandMe)
 END_EVENT_TABLE()
 
-IMPLEMENT_APP(MyApp)
+wxIMPLEMENT_APP(MyApp);
 
 // ============================================================================
 // implementation
